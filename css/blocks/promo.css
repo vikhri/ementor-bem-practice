@@ -1,0 +1,114 @@
+.promo__link-down {
+    grid-area: link; 
+    align-self: end;
+    justify-self: end; 
+    font-size: 14px;
+    line-height: 14px;
+    color: #fdfdfd;
+    text-decoration: none;
+    writing-mode: vertical-rl; 
+    padding-bottom: 30px; 
+    background-image: url("../../images/icons/arrow-down.svg");
+    background-repeat: no-repeat;
+    background-position: bottom; 
+  }
+  
+  .promo__link-down:hover {
+    opacity: 0.7;
+  }
+  
+  .promo__link-down:active {
+    opacity: 0.5;
+  }
+
+  .promo {
+    background-color: #10b582;
+    padding-bottom: 120px;
+    padding-top: 120px;
+    color: white;
+  } 
+
+  .promo__cover {
+    display: grid;
+    grid-template-columns: 270px 1fr 270px;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+      "social content img-right"
+      "img-left content img-right"
+      "img-left content link";
+  }
+
+  .promo__content {
+    width: 550px;
+    margin: 155px auto 95px;
+    grid-area: content;
+  }
+
+
+
+  /* Декоративное оформление. Начало */
+.promo__img-cover-bottom-left {
+    grid-area: img-left;
+    align-self: end;
+    justify-self: start;
+  }
+  
+  .promo__img-cover-bottom-left--cropping-top-right {
+    position: relative;
+    display: inline-block;
+    padding-top: 30px;
+    padding-right: 30px;
+  } 
+  
+  .promo__img-cover-bottom-left--cropping-top-right img {
+    position: relative;
+    display: block;
+    border-top-right-radius: 80px 80px;
+  } 
+
+  .promo__img-cover-bottom-left--cropping-top-right::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 30px;
+    width: calc(100% - 30px);
+    height: calc(100% - 30px);
+    border: 1px dashed #fdfdfd;
+    border-radius: 0 80px 0 0;
+  } 
+  
+  .promo__img-cover-top-right {
+    grid-area: img-right;
+    align-self: start;
+    justify-self: end;  
+  }
+  
+  .promo__img-cover-top-right--cropping-top-left {
+    position: relative;
+    display: inline-block;
+    padding-top: 30px;
+    padding-left: 30px;
+  } 
+  
+ .promo__img-cover-top-right--cropping-top-left img {
+    position: relative;
+    display: block;
+    border-top-left-radius: 80px 80px;
+  } 
+  
+   .promo__img-cover-top-right--cropping-top-left::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: calc(100% - 30px);
+    height: calc(100% - 30px);
+    border: 1px dashed #fdfdfd;
+    border-radius: 80px 0 0 0;
+  } 
+  /* Декоративное оформление. Конец */
+
+  .promo__social {
+    grid-area: social;
+  }
+  

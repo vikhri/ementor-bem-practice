@@ -1,0 +1,17 @@
+/* Вспомогательные "атомарные" классы */
+@import "helpers/visually-hidden.css"; 
+@import "helpers/container.css"; 
+
+/* Блоки */
+@import "blocks/logo.css"; 
+@import "blocks/site-navigation.css"; 
+@import "blocks/main-navigation.css";
+@import "blocks/page-header.css";
+@import "blocks/socials.css";
+@import "blocks/button.css";
+@import "blocks/offer.css";
+@import "blocks/promo.css";
+@import "blocks/statistics.css";
+@import "blocks/teachers.css";
+@import "blocks/about.css";
+@import "blocks/page.css";
